@@ -1,0 +1,789 @@
+/*-------------------------------------------------------------------------------
+Theme name:Coming soon(DARK);
+Version:1.0;
+Description: COMING SOON HTML5,CSS3 TEMPLATE;
+_______________________________________________________________________________________________________________
+CONTENT TABLE:
+               1.0 MAIN BODY------------------------------(line no 141)
+               1.1 HEADER PART----------------------------(line no 161)
+               1.2 'BELL' LOGO FOR MODAL------------------(line no 168)
+               1.3 MAIN BODY OF MODAL 'BELL'--------------(line no 194)
+               1.4 SIGN UP--------------------------------(line no 218)
+                  1.41 SIGN UP HEADLINE-------------------(line no 222)
+                  1.42 LABEL FOR INPUT--------------------(line no 231)
+                  1.43 INPUT BOX--------------------------(line no 240)
+                  1.44 DROP YOUR THOUGHT------------------(line no 249)
+                  1.45 BUTTON FOR SIGN UP-----------------(line no 255)
+                  1.46 MAIN HEADLINE IN SIGN UP-----------(line no 279)
+                  1.47 ADRESS-----------------------------(line no 286)
+                  1.48 BOTTOM ICONS-----------------------(line no 296)
+               1.5 MAIN-----------------------------------(line no 336)
+                  1.51 DIGIN OF CLOCK---------------------(line no 359)
+                  1.52 DAYS HOUR MINUTE-------------------(line no 367)
+                  1.53 MODAL ABOUT US---------------------(line no 380)
+                      1.531 BUTTON------------------------(line no 381)
+                      1.532 MAIN BODY---------------------(line no 402)
+                      1.533 MODAL PART--------------------(line no 412)
+                      1.534 HEADLINE OF PARAGRAPH---------(line no 445)
+                      1.535 CLOSE BUTTON OF MODAL---------(line no 453)   
+                      1.536 HOVER EFFECT------------------(line no 460)
+               1.6 FOOTER---------------------------------(line no 493)       
+-----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   MAIN custom styles
+   ========================================================================== */
+
+
+
+/**EFFECT FOREVERY ONE**/
+*{
+    margin:0px auto;
+
+    
+}
+/*1.0 MAIN BODY
+-------------------------*/
+body{
+  height: 100vh;
+  width: 100%;
+}
+body::after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    background-color: rgba(0,0,0,.6);
+}
+
+
+
+/*1.1 header
+------------------------*/
+header{
+    height: 20vh;
+    width: 100%;
+    
+}
+/**1.2 AT THE TOP CORNER BELL MODAL FOR SIGN UP
+-------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300);
+.head1{
+   color: rgb(250, 255, 0)!important;
+   font-size: 25px!important;
+   box-sizing: content-box!important;
+   line-height: 48px!important;
+   text-align: center!important;
+   width: 48px!important;
+   height: 48px!important;
+   display: inline-block!important;
+   overflow: hidden!important;
+   border-radius: 50%!important;
+   background-color: rgb(0, 0, 0)!important;
+}
+.hamburger {
+  width: 40px;
+  height: 28px;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 99990;
+  top: 3%!important;
+  right: 3%;
+}
+/**1.3 MAIN BODY OF MODAL BELL
+----------------------------*/
+.menu-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  visibility: visible;
+  z-index: -99;
+  text-align: center;
+  display: table;
+  -webkit-transition: visibility 0.5s ease, opacity 1s ease;
+  -moz-transition: visibility 0.5s ease, opacity 1s ease;
+  -o-transition: visibility 0.5s ease, opacity 1s ease;
+  transition: visibility 0.5s ease, opacity 1s ease;
+}
+.menu-overlay.open {
+  opacity: .97;
+  visibility: visible;
+  z-index: 9999;
+}
+/*1.4 SIGN UP
+------------------------------*/
+
+
+/*1.41 HEADLINE**/
+.h2nd{
+    color: white!important;
+    font-family: "Arvo";
+}
+.special{
+    color: yellow;
+}
+
+/**1.42 NAME,EMAIL,DROP YOUR THOUGHT**/
+.form1 label{
+    color: white;
+    font-size: 1.7em;
+    font-family: 'Arvo';
+    margin-top: .5em;
+    
+}
+
+/*1.43 INPUT BOX**/
+.form1 input{
+    background-color: transparent!important;
+    border: 3px white solid!important;
+    margin-top: 1em;
+    border-radius: 0px;
+}
+
+
+/**1.44 INPUT BOX FOR DROP YOUR THOUGHT**/
+.form1 textarea{
+     background-color: transparent!important;
+    border: 3px white solid!important;
+}
+
+/*1.45 BUTTON FOR SIGN UP**/
+.signup_btn{
+  border-radius: 0px!important;
+    margin-right: 1em!important;
+    background-color: yellow;
+    color: black!important;
+    font-family: 'Arvo'!important;
+    width: 7em!important;
+    font-size: 1em!important;
+    margin-top: 2em!important;
+    z-index: 100;
+    font-weight: bold!important;
+}
+.signup_btn:hover{
+    border-radius: 15px!important;
+    color: yellow!important;
+    background-color: black;
+       transition: .7s all linear .5s;
+    -webkit-transition: .7s all linear .5s;
+    -moz-transition: .7s all linear .5s;
+    -o-transition: .7s all linear .5s;
+    -ms-transition: .7s all linear .5s;
+
+}
+/*1.46 MAIN HEADLINE IN SIGN UP**/
+.spn1{
+    font-family: 'Arvo';
+    font-size: 1.7em;
+    color: yellow;
+    
+}
+/*1.47 adress**/
+.contact2{
+    font-size:1.6em;
+    color: white;
+    line-height: 1.7em;
+    font-family: 'Arvo';
+}
+.contact2:hover{
+    text-decoration: none;
+}
+/*1.48 BOTTOM ICONS**/
+.head2{
+   color: rgb(255, 255, 255)!important;
+   font-size: 15px!important;
+   box-sizing: content-box!important;
+   line-height: 30px!important;
+   text-align: center!important;
+   width: 30px!important;
+   height: 30px!important;
+   display: inline-block!important;
+   overflow: hidden!important;
+   border-radius: 50%!important;
+   border: 1px solid rgb(255, 255, 255)!important;
+}
+.bottom{
+ 
+  
+  z-index: 9999;
+  padding-top: 80vh;
+  
+}
+.bottom_icon{
+    padding-right: .5em;
+}
+.bottom_icon i{
+   
+    border: 2px solid white!important;
+}
+.bottom_icon i:hover{
+    border: 2px solid yellow!important;
+    color: yellow!important;
+       transition: .3s all linear .2s;
+    -webkit-transition: .3s all linear .2s;
+    -moz-transition: .3s all linear .2s;
+    -o-transition: .3s all linear .2s;
+    -ms-transition: .3s all linear .2s;
+
+}
+
+
+/*1.5 MAIN
+-----------------------*/
+main{
+  width: 100%;
+  height:auto;
+  text-align: center;
+  
+
+}
+
+.headline
+{
+padding-top: 10vh;
+padding-bottom: 0px!important;
+z-index: 9999;
+
+}
+
+.headline h1{
+    color: white;
+    font-family: 'Arvo';
+    font-size: 5em!important;
+}
+/*1.51 DIGIT OF THE CLOCK**/
+.span1{
+    color: yellow;
+    font-size: 3em;
+    font-family: 'Arvo';
+    border-bottom: 1px solid white;
+
+}
+/*1.52 DAYS,HOURS,MNT,SCND**/
+.span2{
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Arvo';
+
+}
+.clock_part{
+    display: inline-block;
+    padding-right: 2em;
+   
+
+}
+/*1.53 MODAL MODAL MODAL ABOUT US ABOUT US**/
+/*1.531 BUTTON*/
+.button1 button{
+    border-radius: 0px!important;
+    margin-right: 1em!important;
+    background-color: black;
+    color: white!important;
+    font-family: 'Arvo'!important;
+    width: 10em!important;
+    font-size: 1.2em!important;
+    margin-top: 2em!important;
+    z-index: 100;
+}
+.button1 button:hover{
+    border-radius: 15px!important;
+    color: yellow!important;
+     transition: .3s all linear .2s;
+    -webkit-transition: .3s all linear .2s;
+    -moz-transition: .3s all linear .2s;
+    -o-transition: .3s all linear .2s;
+    -ms-transition: .3s all linear .2s;
+}
+/*1.532 MAIN BODY*/
+.modalBody{
+    height: auto!important;
+    text-align: center;
+    background-color: black!important;
+    border-radius:0px!important;
+    opacity: .95;
+
+    
+}
+/*1.533 MODAL PARTS*/
+.head3{
+   color: white!important;
+   font-size: 72px!important;
+   box-sizing: content-box!important;
+   line-height: 134px!important;
+   text-align: center!important;
+   width: 134px!important;
+   height: 134px!important;
+   display: inline-block!important;
+   overflow: hidden!important;
+   border-radius: 50%!important;
+   background-color: black!important;
+}
+.modal_div{
+    padding-top: 3em;
+    
+
+}
+.modal_div p{
+    font-family: "Libre Franklin";
+    font-size: 1.3em;
+    line-height: 2em;
+    color: white;
+    text-align: justify!important;
+   
+}
+.modal-backdrop.fade.in {
+    z-index: 0!important;
+}
+.fade{
+    transition: opacity .001s linear!important;
+}
+/*1.534 HEADLINE OF PARAGRAPH**/
+.icon h3{
+ font-family: "Arvo";
+ font-size: 2.8em;
+ color: yellow;
+ font-weight: bold;
+
+}
+/*1.535 CLOSE BUTTON OF MODAL**/
+.close1{
+    color: white!important;
+    font-size: 3em!important;
+    font-weight: bolder!important;
+    opacity: 1!important;
+}
+/**1.536 HOVER EFFECT**/
+.modal_div:hover i{
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    color: yellow!important;
+    background-color: black!important;
+    transition: .3s all linear .2s;
+    -webkit-transition: .3s all linear .2s;
+    -moz-transition: .3s all linear .2s;
+    -o-transition: .3s all linear .2s;
+    -ms-transition: .3s all linear .2s;
+
+
+}
+.modal_div:hover .icon h3{
+    transform: scale(.8,.8);
+    -webkit-transform: scale(.8,.8);
+    -o-transform: scale(.8,.8);
+    -ms-transform: scale(.8,.8);
+    -moz-transform: scale(.8,.8);
+    color: white!important;
+       transition: .3s all linear .2s;
+    -webkit-transition: .3s all linear .2s;
+    -moz-transition: .3s all linear .2s;
+    -o-transition: .3s all linear .2s;
+    -ms-transition: .3s all linear .2s;
+
+}
+
+
+/**RESPONSIVE**/
+
+@media only screen and (min-width:150px ) and (max-width: 600px){
+.headline h1{
+    color: white;
+    font-family: 'Arvo';
+    font-size: 2.5em!important;
+}
+/**DIGIT OF THE CLOCK**/
+.span1{
+    color: yellow;
+    font-size: 1.7em;
+    font-family: 'Arvo';
+    border-bottom: 1px solid white;
+
+}
+/**DAYS,HOURS,MNT,SCND**/
+.span2{
+    color: white;
+    font-size: .7em;
+    font-family: 'Arvo';
+
+}
+.clock_part{
+    display: inline-block;
+    padding-right: .8em;
+   
+
+}
+.hamburger {
+  width: 40px;
+  height: 28px;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 99990;
+  top: 3%!important;
+  right: 3%;
+}
+}
+
+@media only screen and (min-width:400px ) and (max-width: 600px){
+  .modal_div p{
+    font-family: "Libre Franklin";
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: white;
+    text-align: justify!important;
+   
+}
+.icon h3{
+ font-family: "Arvo";
+ font-size: 2em;
+ color: yellow;
+ font-weight: bold;
+
+}
+
+}
+@media only screen and (min-width:150px ) and (max-width: 400px){
+.modal_div p{
+    font-family: "Libre Franklin";
+    font-size: .9em;
+    line-height: 1.6em;
+    color: white;
+    text-align: justify!important;
+   
+}
+.icon h3{
+ font-family: "Arvo";
+ font-size: 1.8em;
+ color: yellow;
+ font-weight: bold;
+
+}
+}
+@media only screen and (min-width:200px ) and (max-width: 390px){
+  
+.hamburger {
+  width: 40px;
+  height: 28px;
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 99990;
+  top: 3%!important;
+  right: 85%!important;
+
+}
+.h2nd{
+    color: white!important;
+    font-family: "Arvo";
+    font-size: 1.6em;
+}
+.special{
+    color: yellow;
+}
+/**NAME,EMAIL,DROP YOUR THOUGHT**/
+.form1 label{
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Arvo';
+    margin-top: .5em;
+    
+}
+
+/**INPUT BOX**/
+.form1 input{
+    background-color: transparent!important;
+    border: 3px white solid!important;
+    margin-top: .8em;
+    border-radius: 0px;
+}
+/**INPUT BOX FOR DROP YOUR THOUGHT**/
+.form1 textarea{
+     background-color: transparent!important;
+    border: 3px white solid!important;
+
+}
+.contact2{
+    font-size:1em;
+    color: white;
+    line-height: 1.4em;
+    font-family: 'Arvo';
+}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
